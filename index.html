@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSE 19 of JUST</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kanit&family=Noto+Sans+KR&family=Oswald:wght@600&family=Passion+One&family=Signika&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Changa&family=Francois+One&family=Noto+Sans+HK&family=Odibee+Sans&family=Source+Code+Pro&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato&display=swap');
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        
+        <div class="navbar" id="navbar">
+            
+            <div class="item-nav">
+                <h1 id="navtext">CSE 19 of JUST</h1>
+            </div>
+            <div class="item-nav">
+                <ul id="navul">
+                    <li><a id="link1" href="#home">Home</a></li>
+                    <li><a id="link2" href="#gallery">Gallery</a></li>
+                    <li><a id="link3" href="#std-menu">Students</a></li>
+                    <li><a id="link4" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cont" id="home">
+
+
+            <div class="university">
+                JUST ... Jashore University of Science and Technology<br>
+                First public university in Jashore. Established in 2007<br>
+                And CSE is the first faculty of this Institution
+            </div>
+
+
+            <div class="first-section">
+                <div class="dddinfo">
+                    <h1>3D Cube</h1>
+                    <p>
+                        EAT, SLEEP, CODE<br>
+                        This tree words is the heart of a CSE Student.
+                        And thats why I want to prompt this three
+                        words speacially.<br>
+                        So, I made this 3D CUBE to present this.
+                        <br> I hope everybody likes it.
+                    </p>
+                </div>
+
+                <div class="container-circle">
+                    <div class="cube">
+                        <div class="side front">EAT</div>
+                        <div class="side back">CODE</div>
+                        <div class="side top">BECAUSE IT'S</div>
+                        <div class="side bottom">CODING</div>
+                        <div class="side left">PRACTISE YOURSELF</div>
+                        <div class="side right">SLEEP</div>
+                    </div>
+                </div>
+
+                <div class="dddinfo">
+                    <h1>How I made this</h1>
+                    <p>
+                        At first I created a container to hold the cube, and
+                        add another six division for the side of cube.
+                        Using transform property and its value I arranged
+                        the side of cube to its proper side. And then I added
+                        a animation into the cube, and that's it.
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="study">
+                <div class="classroutine">
+                    <img src="pic/classroutine.jpg">
+                    <span>Class Routine</span>
+                </div>
+                <div class="bookslink">
+                    
+                        <a href="https://drive.google.com/file/d/1M2PejWMkcPCMi8jD64Zud4G3IgVEjcVc/view?usp=sharing" target="_blank">C The Complete Reference</a>
+                    
+                        <a href="https://drive.google.com/file/d/1o_N3J9_bP_pF2tZPLHthLPgw1S3Unj3T/view?usp=sharing" target="_blank">Discrete Mathematics</a>
+                    
+                        <a href="https://drive.google.com/file/d/1bARuDtOYEkeQVM0LSdQLeQI0estljSPP/view?usp=sharing" target="_blank">Previous Semester Question</a>
+                   
+                        <a href="https://drive.google.com/file/d/12qzsPW76EQ-67iicOnYWTsrX9Wvzza9_/view?usp=sharing" target="_blank">Syllabus 1.1 & 1.2 PDF</a>
+                    
+                </div>
+            </div>
+
+            <div class="g-text" id="gallery">
+                <h1>Gallery</h1>
+            </div>
+
+            <div class="gallery">
+                <div class="next" onclick="next()">&gt;</div>
+                <div class="pre" onclick="pre()">&lt;</div>
+                <div class="show">
+                    <div class="image-box image-box1 dpb">
+                        <div class="g-image">
+                            <img src="chairman-sir.jpg" alt="Chairman-Sir">
+                        </div>
+                        <div class="g-caption">
+                            Chairman Sir: Dr. Syed Md. Galib
+                        </div>
+                    </div>
+                    <div class="image-box image-box2">
+                        <div class="g-image">
+                            <img src="prof1.jpg" alt="">
+                        </div>
+                        <div class="g-caption">
+                            OUR PROFESSORS
+                        </div>
+                    </div>
+                    <div class="image-box image-box3">
+                        <div class="g-image">
+                            <img src="prof2.jpg" alt="">
+                        </div>
+                        <div class="g-caption">
+                            OUR PROFESSORS
+                        </div>
+                    </div>
+                    <div class="image-box image-box4">
+                        <div class="g-image">
+                            <img src="prof3.jpg" alt="">
+                        </div>
+                        <div class="g-caption linked">
+                            OUR PROFESSORS<br>
+                            <a href="https://just.edu.bd/department/cse/members" target="_blank">Discover More About Our Professors &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="image-box image-box5">
+                        <div class="g-image">
+                            <img src="pic1.jpg" alt="">
+                        </div>
+                        <div class="g-caption g-text-left">
+                            Photo<br>Grid
+                        </div>
+                    </div>
+                    <div class="image-box image-box6">
+                        <div class="g-image">
+                            <img src="pic2.jpg" alt="">
+                        </div>
+                        <div class="g-caption">
+                        </div>
+                    </div>
+                    <div class="image-box image-box7">
+                        <div class="g-image">
+                            <img src="pic6.jpg" alt="">
+                        </div>
+                        <div class="g-caption">
+                            CSE 19 with their Seniors
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        <!--
+            <div class="container">
+                <button class="prev" onclick="prev()"><</button>
+            <img id="slider" class="img-slider" width="400" height="200"
+             src="image1.png">
+            <button class="next" onclick="next()">></button>
+        -->
+        <h2 class="students">
+            Here Our Students
+        </h2>
+        <div class="std-container"  id="std-menu">
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/masum.jpg" alt="masum">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Masum Billa</div>
+                    <div class="std-dis">Sathkhira</div>
+                    <div class="std-id">ID: 190101</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/joydip.jpg" alt="joydip">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Joydip Das</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 190102</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/sazib.jpg" alt="sazib">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">MD Sajib Hossain</div>
+                    <div class="std-dis">Pabna</div>
+                    <div class="std-id">ID: 190103</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/jotiron.jpg" alt="jotiron">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Jotiron Mondol Joy</div>
+                    <div class="std-dis">Khulna</div>
+                    <div class="std-id">ID: 190104</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/male.jpeg" alt="tahmidul">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Tahmidul Kabir Rafi</div>
+                    <div class="std-dis">Rajbari</div>
+                    <div class="std-id">ID: 190105</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/mahfuj.jpg" alt="mahfuj">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Mahfuj Mirza</div>
+                    <div class="std-dis">Tangail</div>
+                    <div class="std-id">ID: 190106</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/srijon.jpg" alt="srijon">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Srijon Sarker</div>
+                    <div class="std-dis">Sherpur</div>
+                    <div class="std-id">ID: 190107</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/swapon.jpg" alt="swapon">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">MD. Tosiqul Islam</div>
+                    <div class="std-dis">Chapai</div>
+                    <div class="std-id">ID: 190108</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/raj.png" alt="raj">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Raj Adhikary</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 190109</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/sabbir.jpg" alt="sabbir">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Sabbir Ahmed</div>
+                    <div class="std-dis">Khulna</div>
+                    <div class="std-id">ID: 190110</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/tandra.jpg" alt="tandra">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Nishat Jahan Tandra</div>
+                    <div class="std-dis">Naoga</div>
+                    <div class="std-id">ID: 190111</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/hira.jpg" alt="hira">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Hira Biswas</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 190112</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/tanvir.jpg" alt="tanvir">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Tanvir Hossain</div>
+                    <div class="std-dis">Bogura</div>
+                    <div class="std-id">ID: 190113</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/prangon.jpg" alt="prangon">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Sakib Hasan Prangon</div>
+                    <div class="std-dis">Khulna</div>
+                    <div class="std-id">ID: 190114</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/mash.jpg" alt="mash">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Mashrafi Bin Siraj Sakib</div>
+                    <div class="std-dis">Khulna</div>
+                    <div class="std-id">ID: 190116</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/farhana.jpg" alt="farhana">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Farhana Jasmine</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 190118</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/mirza.jpg" alt="mohibul">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Mirza Mohibul Hasan</div>
+                    <div class="std-dis">Faridpur</div>
+                    <div class="std-id">ID: 190119</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/mahmodul.jpg" alt="mirza">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">MD Mahmodul Hossain</div>
+                    <div class="std-dis">Bogura</div>
+                    <div class="std-id">ID: 190120</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/tanzil.jpg" alt="tanzil">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Khaza Mohammad Tanzil</div>
+                    <div class="std-dis">Pabna</div>
+                    <div class="std-id">ID: 190121</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/arafat.jpg" alt="arafat">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Abdul Khaled Arafat</div>
+                    <div class="std-dis">Narayanganj</div>
+                    <div class="std-id">ID: 190122</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/dipu.jpg" alt="dipu">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Dipu Biswas</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 190124</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/rafi.jpg" alt="rafi">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">M.A. Rafi</div>
+                    <div class="std-dis">Mymenshingh</div>
+                    <div class="std-id">ID: 190125</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/parvej.jpg" alt="parvej">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Parvej Chowkidar</div>
+                    <div class="std-dis">Khulna</div>
+                    <div class="std-id">ID: 190126</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/ajmain.png" alt="ajmain">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Ajmain Muhtadi Joardar</div>
+                    <div class="std-dis">Khulna</div>
+                    <div class="std-id">ID: 190127</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/nayan.jpg" alt="nayan">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Nayan Malakar</div>
+                    <div class="std-dis">Khulna</div>
+                    <div class="std-id">ID: 190128</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/nitay.jpg" alt="nitay">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Nitay Chandra Das</div>
+                    <div class="std-dis">Kishoreganj</div>
+                    <div class="std-id">ID: 190129</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/sadia.jpg" alt="sadia">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Sadia Islam Silvee</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 190130</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/ahsanul.jpg" alt="dipto">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Ahsanul Rahim Sajid Dipto</div>
+                    <div class="std-dis">Khulna</div>
+                    <div class="std-id">ID: 190131</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/tasmia.jpg" alt="tasmia">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Zannatul Tasmia Moyuri</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 190132</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/ayesha.png" alt="ayesha">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Aysha Akhtar</div>
+                    <div class="std-dis">Unknown</div>
+                    <div class="std-id">ID: 190133</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/sumitra.jpg" alt="sumitra">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Sumitra Paul</div>
+                    <div class="std-dis">Sathkhira</div>
+                    <div class="std-id">ID: 190134</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/arisha.jpg" alt="arisha">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Tasnuba Tasnim</div>
+                    <div class="std-dis">Khulna</div>
+                    <div class="std-id">ID: 190135</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/ridwan.jpg" alt="ridwan">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Mohammad Ridwan</div>
+                    <div class="std-dis">Cox's Bazar</div>
+                    <div class="std-id">ID: 190136</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/sobuj.jpg" alt="sobuj">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Rejbanul Islam Sobuj</div>
+                    <div class="std-dis">Rajbari</div>
+                    <div class="std-id">ID: 190137</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/isa.jpg" alt="isa">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">MD. Isa Ahmed Shan</div>
+                    <div class="std-dis">Khulna</div>
+                    <div class="std-id">ID: 190138</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/moba.jpg" alt="Mobashser">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Mobashser Alam</div>
+                    <div class="std-dis">Dinajpur</div>
+                    <div class="std-id">ID: 190139</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/lina.jpg" alt="lina">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Mst. Mahbuba Ferdous</div>
+                    <div class="std-dis">Natore</div>
+                    <div class="std-id">ID: 190140</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/ashik.jpg" alt="ashik">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">MD. Ahsan Mahmud</div>
+                    <div class="std-dis">Sathkhira</div>
+                    <div class="std-id">ID: 190141</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/khalek.jpg" alt="khalek">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">MD. Khalekuzzaman</div>
+                    <div class="std-dis">Rangpur</div>
+                    <div class="std-id">ID: 190142</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/joyashis.jpg" alt="joyashis">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Joyashis Ghosh</div>
+                    <div class="std-dis">Sathkhira</div>
+                    <div class="std-id">ID: 190143</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/malik.jpg" alt="malik">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Malik Nusrat Nahar Nuhin</div>
+                    <div class="std-dis">Chuadanga</div>
+                    <div class="std-id">ID: 190144</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/dipto.jpg" alt="dipta">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Dipta Biswas</div>
+                    <div class="std-dis">Magura</div>
+                    <div class="std-id">ID: 190145</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/Sourav.jpg" alt="Sourav">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Mohammad Saber Mahmud Sourav</div>
+                    <div class="std-dis">Chuadanga</div>
+                    <div class="std-id">ID: 190146</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/urbi.jpg" alt="urbi">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Urbi Debnath</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 190147</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/ruksana.jpg" alt="ruksana">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Ruksana Khatun</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 190148</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/nishat.jpg" alt="nishat">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Md. Mahbub Alam</div>
+                    <div class="std-dis">Chapai</div>
+                    <div class="std-id">ID: 190149</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/galib.jpg" alt="galib">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Abdulla Al Galib</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 190150</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/niloy.png" alt="niloy">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Niloy Das</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 190151</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/zakaria.jpg" alt="zakaria">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">MD. Zakaria Ibne Azam Khan</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 190152</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/jahid.jpg" alt="jahid">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">MD. Jahid Rana</div>
+                    <div class="std-dis">Joypurhat</div>
+                    <div class="std-id">ID: 190153</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/sagor.jpg" alt="sagor">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Mehedi Hasan Sagor</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 190154</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/shoaib.jpg" alt="shoaib">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Mohammad Shoaib</div>
+                    <div class="std-dis">Chuadanga</div>
+                    <div class="std-id">ID: 180102</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/nahid.png" alt="nahid">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Nahid Karim Emon</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 180103</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/wakil.jpg" alt="wakil">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">MD. Abdul Wakil</div>
+                    <div class="std-dis">Jamalpur</div>
+                    <div class="std-id">ID: 180105</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/badsha.jpg" alt="badsha">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Badsha Ali</div>
+                    <div class="std-dis">Jashore</div>
+                    <div class="std-id">ID: 180112</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/tareq.jpg" alt="tareq">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Istiyaq Bin Tareq</div>
+                    <div class="std-dis">Khulna</div>
+                    <div class="std-id">ID: 180117</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/shakil.jpg" alt="shakil">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Mahmudul Hossain</div>
+                    <div class="std-dis">Sherpur</div>
+                    <div class="std-id">ID: 180119</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/priya.jpg" alt="priya">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Mahbuba Islam Priya</div>
+                    <div class="std-dis">Khulna</div>
+                    <div class="std-id">ID: 180142</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/male.jpeg" alt="shakil">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">MD. Shakil Hossain</div>
+                    <div class="std-dis">Sirajganj</div>
+                    <div class="std-id">ID: 180143</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/romel.jpg" alt="Romel">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">MD. Moshiur Rahman Romel</div>
+                    <div class="std-dis">Mymenshingh</div>
+                    <div class="std-id">ID: 180149</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/amir.jpg" alt="amir">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Amir Raja Ahad</div>
+                    <div class="std-dis">Khulna</div>
+                    <div class="std-id">ID: 170115</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/maruf.jpg" alt="Maruf">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">Abdul Maruf Siddique</div>
+                    <div class="std-dis">Bogura</div>
+                    <div class="std-id">ID: 170150</div>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="std-pic">
+                    <img src="pic/nafi.jpg" alt="nafi">
+                </div>
+                <div class="std-info">
+                    <div class="std-name">MD. Nafiur Rahman</div>
+                    <div class="std-dis">Dhaka</div>
+                    <div class="std-id">ID: 170151</div>
+                </div>
+            </div>
+            
+        </div>
+
+            
+
+        </div>
+
+        <div class="about" id="about">
+            <div class="dept-view-text">
+                Here is a 3D view of JUST Academic building<br>
+                Created by Sharier Oni, Immediate Senior Of CSE 19
+            </div>
+            <div class="video" id="video">
+                <div class="editor-info">
+                    <div class="pic">
+                        <img src="pic/sharier-oni-vai.jpg" alt="Sharier Oni">
+                    </div>
+                    <div class="information">
+                        <div class="std-name">Sharier Oni<br>CSE 18</div>
+                    </div>
+                </div>
+                <div class="vdo">
+                    <iframe width="600" height="335" src="https://www.youtube.com/embed/zfrwx9sHm4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+            <div class="author">
+                <div class="about-text">About The website</div>
+
+                <div class="para-text">
+                    <div class="para">
+                        This website is not for any commercial purpose. It's just
+                        made from my love to my classmates. OH! OW! I mean made using
+                        HTML, CSS and JavaScript. JavaScript is awesome than the two others.
+                        As a scripting language it helped me a lot.<br>
+                        I had to make the website responsive because somebody will visit with pc or
+                        somebody with phone. So I made it responsive for pc and phone. viewers with tablet
+                        may be face with problem.<br>
+                        <span class="thanks">Thanks For Visiting.</span><br>
+                        <span id="count"></span><span> viewers</span>
+                    </div>
+                </div>
+                <div class="a-info">
+                    <div class="a-img">
+                        <div class="a-pic">
+                            <img src="pic/Sourav.jpg" alt="sourav">
+                        </div>
+                    </div>
+                    <div class="a-bio">
+                        <div class="a-name">Mohammad Saber Mahmud Sourav</div>
+                        <div class="a-dept">Dept. of Computer Science and Engineering</div>
+                        <div class="a-uni">Jashore University of Science and Technology</div>
+                        <div class="a-fb">
+                            <a href="https://www.facebook.com/sabermahmud.sourav.7/" target="_blank">Facebook: facebook.com/sabermahmud.sourav.7/</a>
+                        </div>
+                        <div class="a-mail">Mail: sabermahmud.sourav.7@gmail.com</div>
+                        <div class="a-linkedin">
+                            <a href="https://www.linkedin.com/in/saber-mahmud-sourav-930211193/" target="_blank">Linkedin: linkedin.com/in/saber-mahmud-sourav-930211193/</a>
+                        </div>
+                        <div class="a-linkedin">
+                            <a href="https://github.com/smsourav" target="_blank">Github: https://github.com/smsourav</a>
+                        </div>
+                        <div class="a-phn">Phone: +88 01892-773001</div>
+                    </div>
+
+                </div>
+
+                <div class="site-footer">
+                    <div class="footer">
+                        Copyright &copy; 2020 by Saber Mahmud Sourav
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
