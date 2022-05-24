@@ -1,5 +1,4 @@
 window.onscroll = function() {scrollFunction()};
-window.onload = function() {auto()};
 
 function scrollFunction() {
 
@@ -83,50 +82,57 @@ function scrollFunction() {
     
   }
 }
-var j=1;
 
-function auto(){
-    if(j < 7)
-    {
-        document.querySelector('.image-box'+(j+1)).classList.add('dpb');
-        document.querySelector('.image-box'+j).classList.remove('dpb');
-        j++;
-    }
-    else {
-        document.querySelector('.image-box1').classList.add('dpb');
-        document.querySelector('.image-box7').classList.remove('dpb');
-        j=1;
-    }
+var gallery = document.querySelector('.gallery-view');
+var slide = document.querySelector('.slide');
 
-    setTimeout(auto, 5000);
+var leftB = document.querySelector('.ctrl-btn.l');
+var rightB = document.querySelector('.ctrl-btn.r');
+
+var galPose = gallery.offsetLeft;
+console.log(galPose);
+leftB.style.left = `${galPose-50}px`;
+rightB.style.right = `${galPose-50}px`;
+
+var gW = gallery.offsetWidth;
+var sW = slide.offsetWidth;
+
+var change = 0;
+
+leftB.addEventListener('click', callLT);
+rightB.addEventListener('click', callRT);
+
+var myint = setInterval(rt, 5000);
+
+function callLT() {
+    clearInterval(myint);
+    lt();
+    myint = setInterval(rt, 5000);
 }
-
-
-
-function next(){
-    if(j < 7)
-    {
-        document.querySelector('.image-box'+(j+1)).classList.add('dpb');
-        document.querySelector('.image-box'+j).classList.remove('dpb');
-        j++;
-    }
-    else {
-        document.querySelector('.image-box1').classList.add('dpb');
-        document.querySelector('.image-box7').classList.remove('dpb');
-        j=1;
-    }
+function callRT() {
+    clearInterval(myint);
+    rt();
+    myint = setInterval(rt, 5000);
 }
-
-function pre(){
-    if(j == 1)
+function lt() {
+    if(change != 0)
     {
-        j=7;
-        document.querySelector('.image-box1').classList.remove('dpb');
-        document.querySelector('.image-box7').classList.add('dpb');
+        change += gW;
+    } else {
+        change -= (sW - gW);
     }
-    else {
-        j--;
-        document.querySelector('.image-box'+j).classList.add('dpb');
-        document.querySelector('.image-box'+(j+1)).classList.remove('dpb');
+
+    doTrans();
+}
+function rt() {
+    if(change*(-1) < sW - gW)
+    {
+        change -= gW;
+    } else {
+        change = 0;
     }
+    doTrans();
+}
+function doTrans() {
+    slide.style.transform = `translateX(${change}px)`;
 }
