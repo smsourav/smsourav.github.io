@@ -1,5 +1,19 @@
 window.onscroll = function() {scrollFunction()};
 
+
+var gallery = document.querySelector('.gallery-view');
+var slide = document.querySelector('.slide');
+
+var leftB = document.querySelector('.ctrl-btn.l');
+var rightB = document.querySelector('.ctrl-btn.r');
+
+var galPose = gallery.offsetLeft;
+console.log(galPose);
+
+
+var gW = gallery.offsetWidth;
+var sW = slide.offsetWidth;
+
 function scrollFunction() {
 
     var navbar = document.getElementById("navbar");
@@ -81,21 +95,16 @@ function scrollFunction() {
 
     
   }
+  if(x.matches){
+    leftB.style.left = `${galPose-25}px`;
+    rightB.style.right = `${galPose-25}px`;
+  } else {
+    leftB.style.left = `${galPose-50}px`;
+    rightB.style.right = `${galPose-50}px`;
+  }
 }
 
-var gallery = document.querySelector('.gallery-view');
-var slide = document.querySelector('.slide');
 
-var leftB = document.querySelector('.ctrl-btn.l');
-var rightB = document.querySelector('.ctrl-btn.r');
-
-var galPose = gallery.offsetLeft;
-console.log(galPose);
-leftB.style.left = `${galPose-50}px`;
-rightB.style.right = `${galPose-50}px`;
-
-var gW = gallery.offsetWidth;
-var sW = slide.offsetWidth;
 
 var change = 0;
 
