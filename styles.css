@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
+    scroll-behavior: smooth;
 }
 
 body{
@@ -13,13 +14,18 @@ body{
     background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
+    padding: 15px;
+    padding-top: 200px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .cont {
     width: 80%;
     height: auto;
     margin: 0px auto;
-    padding-top: 60px;
+
 }
 
 .university {
@@ -40,48 +46,53 @@ body{
 }
 
 .navbar {
-    width: 100%;
+    background: transparent;
+    width: calc(100% - 30px);
     position: fixed;
     height: 100px;
-    margin: 30px auto;
     display: flex;
     flex-direction: row;
     border-radius: 5px;
     justify-content: space-between;
+    align-items: center;
+    top: 15px;
+    padding: 120px;
     z-index: 99999;
+    transition: 0.5s;
+}
+.navbar.collapse {
+    padding: 20px;
+    background: #cbcbcb;
 }
 .item-nav h1 {
     position: relative;
-    color: rgb(146, 247, 52);
-    font-size: 50px;
-    top: -15px;
+    color: rgb(61, 123, 149);
+    font-size: 70px;
     font-family: 'Fjalla One', sans-serif;
-    left: 120px;
+    transition: 0.5s;
+}
+.navbar.collapse .item-nav h1 {
+    font-size: 50px;
 }
 .item-nav ul {
     position: relative;
-    right: 120px;
-    padding: 0;
-    top: 0px;
-}
-.item-nav ul li {
-    display: inline-block;
-    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
 }
 .item-nav ul li a {
     position: relative;
     text-decoration: none;
-    color: rgb(146, 247, 52);
-    font-size: 30px;
-    font-family: 'Kanit', sans-serif;
+    color: rgb(28, 128, 222);
+    font-size: 25px;
+    font-family: 'poppins', sans-serif;
     border-radius: 3px;
-    padding: 10px 15px;
-    line-height: 70px;
+    padding: 5px 20px;
 }
 
 .item-nav ul li a:hover, .item-nav ul li a.active {
-    background-color: rgb(146, 247, 52);
-    color: black;
+    background-color: rgb(28, 128, 222);
+    color: #fff;
     transition: 0.4s;
 }
 
@@ -593,10 +604,10 @@ body{
 
 
 @media (max-width: 480px){
-    body{
-        background-image: url('pic/bg-mo.jpg');
-        background-size: cover;
-        background-position: center;
+    body {
+        padding: 10px !important;
+        padding-top: 100px !important;
+        overflow-x: hidden;
     }
     .cont {
         position: relative;
@@ -606,30 +617,50 @@ body{
     }
     
     .navbar {
-        width: 100%;
-        display: flex;
+        height: 100px;
+        width: calc(100% - 20px) !important;
         flex-direction: column;
-        align-items: center;
+        border-radius: 5px;
+        justify-content: center;
+        gap: 5px;
+    }
+    .navbar.collapse {
+        padding: 5px;
+        background: #cbcbcb;
     }
     .item-nav h1 {
-        color: rgb(146, 247, 52);
-        font-size: 40px;
-        line-height: 0px;
-        left: 0px;
+        position: relative;
+        color: rgb(22, 194, 83);
+        font-size: 50px;
+        font-family: 'Fjalla One', sans-serif;
+        transition: 0.5s;
+    }
+    .navbar.collapse .item-nav h1 {
+        font-size: 35px;
+    }
+    .brand {
+        white-space: nowrap;
     }
     .item-nav ul {
-        right: 8px;
-        margin: 0px auto;
-        padding: 20px 0px;
-    }
-    .item-nav ul li {
-        display: inline-block;
-        margin: 0px;
-        padding: 0px;
+        position: relative;
+        list-style: none;
+        display: flex;
+        gap: 3px;
     }
     .item-nav ul li a {
-        font-size: 16px;
-        line-height: 20px;
+        position: relative;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        font-family: 'poppins', sans-serif;
+        border-radius: 3px;
+        padding: 3px 10px;
+    }
+    
+    .item-nav ul li a:hover, .item-nav ul li a.active {
+        background-color: rgb(28, 128, 222);
+        color: #fff;
+        transition: 0.4s;
     }
 
 
@@ -686,6 +717,7 @@ body{
     .university {
         color: rgb(255, 255, 255);
         width: fit-content;
+        min-width: 90%;
         font-size: 25px;
         text-align: center;
         margin: 0 auto;
