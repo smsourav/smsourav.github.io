@@ -371,18 +371,23 @@ body{
 }
 
 .students {
+    padding-top: 120px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.students h1 {
+    width: fit-content;
     color: white;
-    width: 700px;
     position: relative;
     background-color: rgba(12, 250, 250, 0.644);
-    top: 160px;
     text-shadow: 2px 2px 9px black;
-    margin: 0px auto 0px auto;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 10px 30px;
+    border-radius: 6px;
     font-size: 40px;
+    font-weight: 900;
+    margin: 0 auto;
+    letter-spacing: 5px;
     text-align: center;
-    font-family: 'poppins', sans-serif;
 }
 
 .std-container {
@@ -393,45 +398,45 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 180px;
+    padding-top: 50px;
     margin: 0px auto;
     gap: 30px;
 }
 
 .std-card {
     width: 240px;
-    height: 370px;
+    aspect-ratio: 0.64;
     background: rgba(0,0,0, 0.5);
     border-radius: 10px;
     box-shadow: 0px 5px 9px black;
+    overflow: hidden;
 }
 .std-pic {
-    height: 240px;
-    width: inherit;
+    width: 100%;
+    aspect-ratio: 1;
 }
 .std-pic img {
     height: inherit;
     width: inherit;
-    border-radius: 8px 8px 0 0;
 }
 .std-info {
     padding: 5px;
     text-align: center;
 }
 .std-name {
-    font-size: 21px;
+    font-size: 20px;
     color: white;
     text-shadow: 2px 2px 9px black;
 }
 .std-dis {
     font-size: 18px;
-    color: rgb(174, 255, 137);
+    color: rgb(217, 26, 163);
     text-shadow: 2px 2px 9px black;
 }
 .std-id {
     padding-top: 2px;
-    font-size: 18px;
-    color: rgb(230, 232, 235);
+    font-size: 16px;
+    color: rgb(235, 225, 21);
     text-shadow: 2px 2px 9px black;
 }
 
@@ -474,7 +479,6 @@ body{
     width: inherit;
     
 }
-
 .information .std-name {
     text-align: center;
     font-size: 40px;
@@ -508,8 +512,12 @@ body{
 .para-text {
     width: 100%;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 15px 15px 0 0;
+    perspective: 1000;
+    transform: translate3d(0,0,0);
+    transform: translateZ(0);
+    backdrop-filter: blur(3px);
 }
 
 .para {
@@ -556,6 +564,11 @@ body{
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.4);
     text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translate3d(0,0,0);
+    transform: translateZ(0);
+    backdrop-filter: blur(5px);
 }
 
 .a-name {
@@ -717,7 +730,6 @@ body{
     .university {
         color: rgb(255, 255, 255);
         width: fit-content;
-        min-width: 90%;
         font-size: 25px;
         text-align: center;
         margin: 0 auto;
@@ -802,47 +814,42 @@ body{
         opacity: 1;
     }
 
-   
 
-
-
-    
-    .students {
+    .students h1 {
+        width: fit-content;
         color: white;
-        width: 70%;
-        top: 180px;
-        margin: 0px auto 0px auto;
-        padding: 20px;
+        position: relative;
+        background-color: rgba(12, 250, 250, 0.644);
+        text-shadow: 2px 2px 9px black;
+        padding: 10px 20px;
         font-size: 25px;
+        letter-spacing: 3px;
+        text-align: center;
     }
-
+    
     .std-container {
-        padding-top: 180px;
+        width: 100%;
+        gap: 15px;
     }
 
     .std-card {
-        width: 180px;
-        height: 280px;
-    }
-    .std-pic {
-        height: 180px;
-        width: inherit;
-    }
-    .std-pic img {
-        height: inherit;
-        width: inherit;        
+        width: 45%;
+        aspect-ratio: 0.58;
     }
     .std-info {
         padding: 5px;
     }
     .std-name {
         font-size: 18px;
+        letter-spacing: 0.5px;
+        line-height: 120%;
     }
     .std-dis {
         font-size: 16px;
     }
     .std-id {
-        font-size: 16px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
     }
 
     .editor-info {
@@ -869,6 +876,7 @@ body{
         color: white;
         font-family: 'Fjalla One', sans-serif;
         font-size: 40px;
+        padding-top: 100px;
     }
     
     .vdo {
